@@ -1,210 +1,582 @@
-:root {
-  --accent-color: #C271FF;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.btn-primary {
-  background-color: var(--accent-color) !important;
-}
-
-nav #mynav ul li a:hover {
-  color: var(--accent-color) !important;
-}
-
-a:hover, a:active {
-  color: var(--accent-color) !important;
-}
-
-/* Dropdowns */
-
-.btn-secondary:hover {
-  opacity: 0.9;
-}
-
-.btn-secondary, .btn-secondary:hover {
-  width: 20rem;
-  height: 55px;
-  background-color: #d8a4ff !important;
-  border-bottom: 5px;
-  border-bottom: #d8a4ff !important;
-}
-
-.dropdown-custom {
-  border-top: 5px;
-  border-top: #d8a4ff;
-  width: 20rem;
-}
-
-/*=============*/
-.btn-primary:hover {
-  opacity: 0.9;
-}
-
-#quotes-carousel, #search-section {
-  background-color: var(--accent-color);
-}
+/*** 1. GLOBAL ***/
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-header {
-  height: 100%;
-  width: 100%;
-  background-image: url('./images/pic_1.jpg');
+.extra-bold {
+  font-weight: 900;
+}
+
+.btn {
+  background-color: #C271FF;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn:hover, .btn-active {
+  opacity: 0.9;
+}
+
+.carousel .holberton_school-icon-arrow_3,
+.carousel .holberton_school-icon-arrow_4 {
+  font-size: 80px;
+}
+
+/*** 2. HEADER AND HERO SECTION ***/
+
+.hero-section, .pricing-hero, .courses-hero {
+  background-color: white;
+  background-image: url(images/pic_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
 }
 
-#pricing-header {
-  background-image: url('./images/pic_2.jpg');
+.pricing-hero {
+  background-image: url(images/pic_2.jpg);
 }
 
-#courses-header {
-  background-image: url('./images/pic_3.jpg');
+.courses-hero {
+  background-image: url(images/pic_3.jpg);
 }
 
-.accent-colors {
-  color: var(--accent-color) !important;
+/* nav bar
+  ============================= */
+
+.navbar .navbar-toggler {
+  font-size: 30px;
 }
 
-.navbar-toggler {
-  color: white;
+.navbar-brand img {
+  height: 30px;
 }
 
-.navbar-toggler:active {
-  border: solid;
-  border-color: orange;
+.navbar ul {
+  font-size: 12px;
 }
 
-.play-image {
-  position: absolute;
-  width: 40%;
-  margin-top: 3%;
-  margin-left: 20%;
+.selected-page, .selected-page:hover {
+  color: #C271FF;
+  text-decoration: underline white 2px;
+  text-underline-offset: 8px;
 }
 
-.card-header-custom {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 50%;
+/* middle section
+  ============================= */
+
+.hero-section h1 {
+  font-size: 120px;
 }
 
-#card-header-1 {
-  background-image: url(./images/thumbnail_4.jpg) !important;
+.hero-section h2 {
+  margin-bottom: 87px;
+}
+
+.hero-section h2 span {
+  color: #C271FF;
+}
+
+.mid-section {
+  margin-top: 156px;
+  margin-bottom: 168px;
+}
+
+.text-section {
+  margin-top: 90px;
+}
+
+.text-section .play-symbol {
+  height: 60px;
+}
+
+.text-section .what {
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+
+.text-section p {
+  font-size: 26px;
+}
+
+.text-section .smile-logo {
+  height: 30px;
+}
+
+.text-section .text-logo {
+  height: 40px;
+}
+
+.text-section h1 {
+  font-size: 60px;
+}
+
+.over-section h2 {
+  font-family: 'Coiny';
+  font-weight: 400;
+}
+
+.over-section h2 span {
+  color: #C271FF;
+}
+
+/* pro section
+  ============================= */
+
+.pro-photos {
+  padding-bottom: 96px;
+}
+
+.pro-photos img {
+  width: 150px;
+  height: 150px;
+}
+
+.pro-photos .extra-bold {
+  font-size: 18px;
 }
 
 
-#card-header-2 {
-  background-image: url(./images/thumbnail_3.jpg) !important;
+/* pricing table
+  ============================= */
+
+.prices-grid .btn {
+  width: 162px;
+  height: 44px;
+}
+
+.prices-grid .text-muted,
+.prices-grid .small {
+  font-size: 12px;
+}
+
+.prices-grid table {
+  font-size: 18px;
+}
+
+.prices-grid .first-row {
+  border-top: 0
+}
+
+.prices-grid .check {
+  height: 28px;
+}
+
+.prices-grid .signal {
+  height: 35px;
 }
 
 
-#card-header-3 {
-  background-image: url(./images/thumbnail_1.jpg) !important;
+/*** 3. TESTIMONIALS CAROUSEL ***/
+
+.testimonials-section {
+  background-color: #C271FF;
+}
+
+#testimonials {
+  background-color: #C271FF;
+}
+
+#testimonials img {
+  width: 160px;
+  height: 160px;
 }
 
 
-#card-header-4 {
-  background-image: url(./images/thumbnail_2.jpg) !important;
+/*** 4. TUTORIALS SECTION ***/
+/*** 6. LATEST VIDEOS SECTION ***/
+
+.late-and-tut {
+  padding-bottom: 88px;
 }
 
-#card-header-1-latest {
-  background-image: url(./images/thumbnail_5.jpg) !important;
+.late-and-tut h2 {
+  margin-top: 87px;
+  margin-bottom: 75px;
 }
 
-#membership-section {
-  background: #071629;
+.late-and-tut h2 span {
+  color: #C271FF;
 }
 
-#footer-section {
-  background: #071629;
+.late-and-tut .inner-container {
+  width: 80%;
+  overflow: hidden;
 }
 
-#footer-icons {
-  font-size: 40px;
+.results {
+  padding-bottom: 40px;
 }
 
-.membership-item {
+.results .card {
+  margin-bottom: 35px;
+}
+
+.late-and-tut .card-img-top,
+.results .card-img-top {
+  max-width: 255px;
+  height: 154px;
+  object-fit: cover;
+}
+
+.late-and-tut .card-img-overlay img,
+.results .card-img-overlay img {
+  width: 64px;
+  height: 64px;
+}
+
+.late-and-tut .card-img-overlay,
+.results .card-img-overlay {
+  height: 154px;
+}
+
+.late-and-tut .card-body,
+.results .card-body {
+  max-width: 255px;
+}
+
+.late-and-tut .vid-desc,
+.results .vid-desc {
   font-size: 14px;
 }
 
-#courses-h1 {
-  font-family: 'Coiny', cursive;
+.late-and-tut .reviewer-info img,
+.results .reviewer-info img {
+  width: 30px;
+  height: 30px;
 }
 
-#input-custom {
-  background-color: #d8a4ff;
-  height: 3.5rem;
-  margin-top: 1px;
+.late-and-tut .reviewer-name,
+.late-and-tut .length,
+.results .reviewer-name,
+.results .length {
+  color: #C271FF;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-#basic-addon1 {
-  background-color: #d8a4ff;
-  margin-top: 0.08rem;
-  font-size: 25px;
+.late-and-tut .stars img,
+.results .stars img {
+  height: 15px;
+  width: 15px;
 }
 
-.form-control::placeholder {
-  font-weight: lighter;
+.late-and-tut .holberton_school-icon-arrow_3,
+.late-and-tut .holberton_school-icon-arrow_4 {
+  color: black;
+}
+
+/*** 5. FREE MEMBERSHIP SECTION ***/
+
+.free-membership {
+  background-color: #071629;
+}
+
+.free-membership h2 {
+  padding-top: 70px;
+  padding-bottom: 58px;
+}
+
+.free-membership h2 span {
+  color: #C271FF;
+}
+
+.free-membership img {
+  width: 45px;
+  height: 36px;
+}
+
+.free-membership .sub-header {
+  font-weight: 600;
+}
+
+.free-membership .blurb {
+  font-size: 14px;
+  width: 212px;
+  margin-bottom: 50px;
+}
+
+.free-membership .btn {
+  margin-top: 10px;
+  margin-bottom: 52px;
+  margin-left: calc(50% - 60px - 15px);
+}
+
+/*** 7. FOOTER ***/
+
+.page-footer {
+  background-color: #071629;
+  padding-top: 90px;
+}
+
+.page-footer img {
+  height: 30px;
+}
+
+.page-footer .holberton_school-icon-ic_facebook,
+.page-footer .holberton_school-icon-ic_twitter,
+.page-footer .holberton_school-icon-ic_instagram {
+  font-size: 30px;
+}
+
+.page-footer .copyright {
+  font-size: 12px;
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+/*** 8.FAQ section ***/
+
+.FAQ {
+  padding-bottom: 110px;
+}
+
+.FAQ h1 {
+  font-size: 60px;
+  font-weight: 300;
+  padding-top: 74px;
+}
+
+.FAQ .font-weight-bold {
+  padding-top: 74px;
+}
+
+.FAQ .text-muted {
+  font-size: 14px;
+}
+
+/*** 9. FILTERS SECTION ***/
+
+.filters {
+  background-color: #C271FF;
+}
+
+.filters label {
+  font-size: 12px;
+}
+
+.filters input,
+.filters .dropdown .btn,
+.filters .holberton_school-icon-search_1 {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.filters .dropdown-menu a:hover {
+  background-color: white;
+  color: #C271FF;
+}
+
+.filters ::placeholder {
   color: white;
-  opacity: 1;
 }
 
-#video-count {
-  color: #0716294C;
-  padding-left: 14.5%;
+.filters .search-icon {
+  background: none;
+  position: relative;
+  left: -1px;
 }
 
-@media (max-width: 1071px)
-{
-  #input-custom {
-      width: 39rem;
+.filters input {
+  height: 47px;
+}
+
+
+/*** 10. LOADERS ***/
+
+.lds-heart {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}
+
+.lds-heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+}
+
+.lds-heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+
+.lds-heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+
+.lds-heart {
+  margin: 20px auto;
+}
+
+.late-and-tut .lds-heart div:after,
+.late-and-tut .lds-heart div:before,
+.late-and-tut .lds-heart div,
+.results .lds-heart div:after,
+.results .lds-heart div:before,
+.results .lds-heart div {
+  background: #C271FF;
+}
+
+@keyframes lds-heart {
+  0% {
+transform: scale(0.95);
+  }
+  5% {
+transform: scale(1.1);
+  }
+  39% {
+transform: scale(0.85);
+  }
+  45% {
+transform: scale(1);
+  }
+  60% {
+transform: scale(0.95);
+  }
+  100% {
+transform: scale(0.9);
   }
 }
 
-@media (max-width: 767px) {
-  .btn-secondary, .btn-secondary:hover {
-      width: 85vw;
-      padding-right: 3rem;
-      height: 55px;
+
+/*** 11. RESPONSIVE DESIGN ***/
+
+@media (max-width: 575px) {
+
+  .hero-section, .pricing-hero {
+background-size: auto 60%;
+background-position: top center;
+background-color: #071629;
   }
 
-  .carot-spacing {
-      margin: 30% !important;
-  }
-  
-  .dropdown-custom {
-      border-top: 5px;
-      border-top: #d8a4ff;
-      width: 85vw;
+  .navbar-brand {
+margin-left: calc(50% - 71px - 57px);
   }
 
-  #input-custom {
-      width: 78vw !important;
+  .hero-section h1 {
+font-size: 61px;
+  }
+
+  .mid-section {
+margin-top: 176px;
+margin-bottom: 150px;
+  }
+
+  .text-section {
+margin-top: 60px;
+  }
+
+  .text-section .what {
+margin-bottom: 50px;
+  }
+
+  .pro-section {
+padding-right: 30px;
+padding-left: 30px;
+  }
+
+  .pro-photos {
+padding-bottom: 38px;
+  }
+
+  .pro-photos div {
+margin-bottom: 58px;
+  }
+
+  #testimonials .holberton_school-icon-arrow_3,
+  #testimonials .holberton_school-icon-arrow_4 {
+position: relative;
+top: -20%;
   }
 }
 
-@media (max-width: 576px) {
-  #hero-title {
-      font-size: 6rem !important;
+
+/*** 12. MULTI-SLIDE CAROUSEL ***/
+
+/* Mobile styles */
+@media (max-width: 768px) and (min-width: 576px) {
+  .late-and-tut .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .late-and-tut .carousel-inner .carousel-item > div:first-child,
+  .late-and-tut .carousel-inner .carousel-item > div:nth-child(2) {
+      display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  .late-and-tut .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .late-and-tut .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+/* Layout */
+.late-and-tut .carousel-inner .carousel-item.active,
+.late-and-tut .carousel-inner .carousel-item-next,
+.late-and-tut .carousel-inner .carousel-item-prev {
+  display: flex;
+  justify-content: center;
+}
+
+/* Cause transition animation to only display for one item at a time (this
+* doesn't seem to affect the actual number of cards displayed). */
+@media (min-width: 768px) {
+
+  /* When moving right */
+  .late-and-tut .carousel-inner .carousel-item-right.active,
+  .late-and-tut .carousel-inner .carousel-item-next {
+    transform: translateX(16.6%);
   }
 
-  .quote-carousel-controls {
-      padding-right: 6rem;
-      padding-left: 6rem;
-      padding-bottom: 12rem;
+  /* When moving left */
+  .late-and-tut .carousel-inner .carousel-item-left.active,
+  .late-and-tut .carousel-inner .carousel-item-prev {
+    transform: translateX(-16.6%);
+  }
+}
+
+@media (min-width: 575px) {
+
+  /* When moving right */
+  .late-and-tut .carousel-inner .carousel-item-right.active,
+  .late-and-tut .carousel-inner .carousel-item-next {
+    transform: translateX(33.2%);
   }
 
-  #input-group-override {
-      margin: auto;
-      width: 86vw;
+  /* When moving left */
+  .late-and-tut .carousel-inner .carousel-item-left.active,
+  .late-and-tut .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.2%);
   }
-  /* add media query for header background height and width changes */
+}
+
+/* Don't show transition animations for other items. */
+.late-and-tut .carousel-inner .carousel-item-right,
+.late-and-tut .carousel-inner .carousel-item-left {
+  transform: translateX(0);
 }
